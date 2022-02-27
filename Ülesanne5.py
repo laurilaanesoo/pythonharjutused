@@ -1,17 +1,22 @@
+#Ülesanne5
+#27.02.2022
+#Lauri Laanesoo
+
+
 #Tärnid
 import random
 arv = []
-for h in range(5):
-    arv.append(random.randint(1,99))
-
-for d in range(h):
-    print("* ")
-
+for h in range(10):
+    arv.append(random.randint(1,20))
+   
+for d in range(len(arv)):
+    print("*" * arv[d])
 
 
 #Vanused
 arvud = []
 vanused = [8,23,96,32,75]
+print()
 print(f"Suurim arv: {max(vanused)} \nVäikseim arv {min(vanused)} Keskmine: {sum(vanused)/len(vanused)} Kokku: {sum(vanused)}")
 
 
